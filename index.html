@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Group C: Sustainable cities and communities Home page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="author" content="Leila Stowe">
+	</head> 
+	
+	<body class="ls_body">
+		
+				<!-- navbar from bootstrap  @reference: https://getbootstrap.com/docs/5.3/components/navbar/ -->
+					<!-- SM: Navbar Start -->
+					<nav class="navbar navbar-expand-lg" id="ls_navbar">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Group C: Web Design Project</a>
+							&nbsp;
+							&nbsp;
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About Us</a>
+									</li>
+									<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Our Research
+										</a>
+										<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="overview.html">Overview</a></li>
+									<li><a class="dropdown-item" href="project-one.html">Affordable Housing</a></li>
+									<li><a class="dropdown-item" href="project-two.html">Human Settlements <br> and Walkable Cities</a></li>
+									<li><a class="dropdown-item" href="project-three.html">Reduced Environmental Impact</a></li>
+									<li><a class="dropdown-item" href="project-four.html">Protection of Heritage</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+			<!-- SM Navbar end -->
+		<br>
+	
+		<div class="container">
+		<!-- heading -->
+				
+				<div class="heading">
+					<div class="row spacer-top">
+						<div class="col-sm-12">
+							<h1 class="ls_h1">Home</h1>
+						</div>
+					</div>
+				</div>
+			
+		<!-- Introduction piece -->
+		<!-- the code below is in a column of twelve to fill the entire row and includes paraghraphs and images -->
+			
+			<div class="intro box" id="boxOne" onmouseover="lightUp()" onmouseout="fadeOut()">
+				<div class="row spacer-top">
+					<div class="col-sm-12">
+					<!-- https://www.pexels.com/photo/road-near-the-glass-buildings-6016829/ -->
+						<img src="images/introCity_ls.jpg" alt="Picture of a city with trees lining the road" class="introCity">
+					
+						<h3 class="ls_p title">Intro</h3>
+						<p class="ls_p">Urbanization is expanding rapidly, with cities expected to house nearly 70% of the world’s population by 2050. However, this growth comes with serious challenges, including rising poverty, inadequate housing, strained transport systems, increasing vulnerability to disasters and increasing carbon emissions being released into the environment. Achieving Sustainable Development Goal 11 requires urban strategies that promote affordable housing, inclusive planning, cultural heritage protection and reduced effect on the environment. Global initiatives such as the Local2030 Coalition are helping drive progress by coordinating efforts among governments, UN agencies and other partners.</p>
+						<br><br>
+						
+						<!-- https://www.pexels.com/photo/a-drone-shot-of-a-road-and-city-buildings-8299712/ -->
+						<img src="images/introCityTwo_ls.jpg" alt="Picture of a city from an arial view" class="introCityTwo">
+						
+						<p class="ls_p">Recent assessments of specific Goal 11 targets show mixed progress. Housing affordability remains a major global issue, with up to 3 billion people affected and significant regional cost disparities. Funding for world heritage protection, though slightly increased, stays far below what is needed, especially in developing countries. Disasters continue to cause extensive damage to infrastructure and essential services each year. Disaster risk reduction has strengthened, however, with most local governments now implementing dedicated strategies.</p>
+					</div>
+				</div>
+			</div>
+			
+		<!-- research preview -->
+		<!-- the code below is also in a column of twelve to fill the entire row and includes a paraghraph, image and a button to navigate to the research overview page -->
+		
+			<div class="rPreview box" id="boxTwo" onmouseover="lightUpTwo()" onmouseout="fadeOutTwo()">
+				<div class="row spacer-top">
+					<div class="col-sm-12">
+					<!-- https://www.pexels.com/photo/road-street-vehicle-bike-1739649/ -->
+						<img src="images/rPreviewBike_ls.jpg" alt="Picture of a bike with cyclists in the background" class="rPreviewBike">
+					
+						<h3 class="ls_p title">Preview</h3>
+						<p class="ls_p">In exploring sustainable urban development, we examined how cities can advance Goal 11 through sustainable settlements, walkable cities, low-carbon emissions, affordable housing and stronger protection of cultural identity. Our research highlighted the growing importance of sustainable settlements, walkable cities, affordable housing and reducing urban carbon emissions, particularly as urban populations continue to rise. We also looked at efforts to safeguard heritage sites, ensuring that modernization does not come at the expense of cultural preservation. Together, these focus areas show how forward-looking urban policies can create cities and communities that are not only more sustainable but also inclusive, connected, and deeply rooted in their historical and cultural contexts.</p>
+						
+						<a href="overview.html" class="button">Learn more</a>
+					</div>
+				</div>
+			</div>
+			
+		<!-- images carousel -->
+		<!-- the code below includes an empty column of 2 on either side of a column of 8 containing and image carousel from bootstrap
+		    @reference: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+		
+		<div class="row spacer-top ">
+			<div class="col-sm-2"></div>
+				<div class ="col-sm-8">
+					<div id="carouselExampleFade" class="carousel slide carousel-fade" class="carousel">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						<!-- https://www.pexels.com/photo/st-isaac-s-cathedral-dome-in-overcast-st-petersburg-34941093/ -->
+						  <img src="images/cHeritage_ls.jpg" class="d-block w-100" alt="An old building with angel statues">
+						</div>
+						<!-- https://www.pexels.com/photo/electric-car-charging-at-station-in-nigde-29078518/ -->
+						<div class="carousel-item">
+						  <img src="images/cCar_ls.jpg" class="d-block w-100" alt="An eletric car at a charging station">
+						</div>
+						<!-- https://www.pexels.com/photo/bird-s-eye-view-of-rooftops-1546166/ -->
+						<div class="carousel-item">
+						  <img src="images/cHousing_ls.jpg" class="d-block w-100" alt="A housing estate">
+						</div>
+					  </div>
+					  
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				</div>		
+			<div class="col-sm-2"></div>
+		</div>
+			<script>
+			// the code below makes it so that when the mouse is on one of the divs the opacity is at 1 to highlight it and when the mouse is off of it the div's opacity is at 0.7
+				function lightUp(){
+					let targetBox = document.getElementById("boxOne");
+					targetBox.style.opacity = "1.0";
+				}
+				
+				function fadeOut(){
+					let targetBox = document.getElementById("boxOne");
+					targetBox.style.opacity = "";
+				}
+				
+				function lightUpTwo(){
+					let targetBoxTwo = document.getElementById("boxTwo");
+					targetBoxTwo.style.opacity = "1.0";
+				}
+				
+				function fadeOutTwo(){
+					let targetBoxTwo = document.getElementById("boxTwo");
+					targetBoxTwo.style.opacity = "";
+				}
+			</script>
+		
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		</div>
+	</body>
+
+</html>
+
