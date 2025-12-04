@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- about us OK -->
+
+	<head>
+		<title>About Us</title>
+		<!-- bootstrap links -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap" rel="stylesheet">
+		<!-- stylesheet link -->
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="author" content="Oran King">
+		
+	</head>
+	
+	<body class="body2_ok">
+		<!-- navbar --!>
+		<nav class="navbar navbar-expand-lg"> <!-- Bootstrap Navbar Reference https://getbootstrap.com/docs/4.0/components/navbar/-->
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Group C: Web Design Project</a>
+			&nbsp;
+			&nbsp;
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Our Research
+						</a>
+						<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="overview.html">Overview</a></li>
+					<li><a class="dropdown-item" href="project-one.html">Affordable Housing</a></li>
+					<li><a class="dropdown-item" href="project-two.html">Human Settlements <br>And Walkable Cities</a></li>
+					<li><a class="dropdown-item" href="project-three.html">Reduced Environmental Impact</a></li>
+					<li><a class="dropdown-item" href="project-four.html">Protection of Heritage</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar end -->
+		<!-- main container -->
+		<div class="container_OK">
+				<br>
+				<!-- Dual classes for header -->
+				<h2 class="font2_OKBold titleAU">About Us</h2>
+				<br>
+				<!-- has js properties to react to mouse over -->
+		<div class="box" id="boxOne" onmouseover="lightUp()" onmouseout="fadeOut()">
+			<div class="div5_OK">
+				
+				<h4 class="titleh4_OK font2_OKBold">Who We Are</h4>
+					<p class="font1_OK">We are a group of four people from a college called the National College of Ireland. Our main goal is to spread awareness about the climate change going and how we can mitigate that with our urban lifestyles. We think its very important that even if you dont live in a city you can make a change in small ways. This websites goal is to share information that benefits all of us. We are also are showcasing our coding skills too. In this webpage we will discuss the one of the 17 SDG goals set by the UN, Sustainable Cities and Communities. We will cover housing, walkable cities and generally all things that fall under urban sustainablity. There is 4 research pages each with their own themes and written by each of our group. We do hope that you enjoy and read our well cited sources coming from academic sources about urban sustainability.
+
+					</p>
+			</div>
+		</div>
+					<br><br>
+			<div class="div6_OK">
+				<!-- img source:  https://www.pexels.com/photo/train-passing-773471/-->
+					<img class="urban7_OK" src="images/urban7_OK.jpg" alt="tram" title="tram">
+			</div>
+					<br><br>
+			<div class="div7_OK" onmouseover="lightUpTwo()" onmouseout="fadeOutTwo()" id="boxTwo">
+				
+				<h4 class="titleh4_OK font2_OKBold">Our Papers</h4>
+					<p class="font1_OK">In the first page we will be covering affordable housing and specifically the use of the SDG goal 11 in Tanzania.
+					<br><br>In the second page we will be looking at the positive effects of good urban sustainability and what that looks like when implemented correctly.<br><br>The third page will be looking at environmental impact of Ireland with studies of traffic in Dublin City<br><br>And finally the fourth page is about the protection historic buildings, monuments, archaeological sites, natural parks</p>
+			</div>
+			
+		
+		</div>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+				</script>
+				
+				<script>
+				// LS code start
+				function lightUp(){
+					let targetBox = document.getElementById("boxOne");
+					targetBox.style.opacity = "1.0";
+				}
+				
+				function fadeOut(){
+					let targetBox = document.getElementById("boxOne");
+					targetBox.style.opacity = "";
+				}
+				
+				function lightUpTwo(){
+					let targetBoxTwo = document.getElementById("boxTwo");
+					targetBoxTwo.style.opacity = "1.0";
+				}
+				
+				function fadeOutTwo(){
+					let targetBoxTwo = document.getElementById("boxTwo");
+					targetBoxTwo.style.opacity = "";
+				}
+				//ls code end (used with permission)
+				</script>
+	</body>
+
+
+
+</html>
